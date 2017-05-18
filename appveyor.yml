@@ -16,5 +16,4 @@ test_script:
   - ps: docker images
 
 deploy_script:  
-  - ps: docker login -u="$env:DOCKER_USER" -p="$env:DOCKER_PASSWORD"
-  - ps: docker push moiamond/ffmpeg-base-windowsservercore
+  - ps: deploy.ps1
