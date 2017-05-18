@@ -10,10 +10,10 @@ install:
   - ps: docker version
 
 build_script:  
-  - ps: docker build -t moiamond/ffmpeg-base-windowsservercore .
+  - ps: .\build.ps1
 
 test_script:  
-  - ps: docker images
+  - ps: .\test.ps1
 
 deploy_script:  
   - ps: .\deploy.ps1
