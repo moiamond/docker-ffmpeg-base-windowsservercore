@@ -16,4 +16,4 @@ test_script:
   - ps: docker images
 
 deploy_script:  
-  - ps: deploy.ps1
+  - ps: .\deploy.ps1
